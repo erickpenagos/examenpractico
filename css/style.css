@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #e5e5e5; 
+}
+
+header {
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 70px;
+}
+
+.logo {
+    color: #cccccc;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo .highlight {
+    color: #ffcc00; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+nav ul li a.active {
+    background-color: #731448;
+    color: white;
+}
+
+.hero {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.hero-content h1 strong {
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+/* Precios */
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+
+.price-item {
+    text-align: center;
+    color: #444;
+}
+
+.price-item img {
+    width: 35px;
+    margin-bottom: 15px;
+}
+
+.price-item h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+.specialties {
+    text-align: center;
+    padding: 40px 0 60px 0;
+    background-color: #e6e6e6;
+}
+
+.specialties h2 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.location {
+    background-color: #731448;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.location h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.location p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 12px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer strong {
+    color: #ccc;
+}
+
+footer .author {
+    color: #731448;
+}
